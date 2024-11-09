@@ -1,0 +1,137 @@
+body{
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 18px;
+    font-family: 'Outfit';
+    font-weight: 300;
+}
+
+.maincontainer{
+    width: 100%;
+    max-width: 300px;
+    background-color: hsl(216, 50%, 16%);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px 25px hsl(217, 54%, 11%);
+}
+
+.maincontainer :hover{
+    cursor: pointer;
+}
+
+.imagecontainer{
+    position: relative;
+    width: 100%;
+}
+
+#image{
+    width: 100%;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 255, 247, 0.5); /* Semi-transparent teal background */
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#hoverimage{
+    width: 50px;
+    height: 50px;
+}
+
+.maincontainer:hover .overlay{
+    opacity: 1;
+}
+h4{
+    color: white;
+    font-size: 24px;
+    margin-bottom: 0.3em;
+}
+
+.description{
+    color: hsl(215, 51%, 70%);
+}
+
+.details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-size: 16px;
+}
+.eth{
+    color: white;
+    display: flex;
+    align-items: center;
+    align-items: center;
+}
+
+.eth img{
+    padding-right: 5px;
+}
+
+.time{
+    color: hsl(215, 51%, 70%);
+    display: flex;
+    align-items: center;
+    align-items: center;
+}
+
+.time img{
+    padding-right: 5px;
+}
+
+.eth p, .time p{
+    margin: 0;
+}
+
+hr{
+    color: hsl(215, 32%, 27%);
+    width: 100%;
+    border: none;
+    height: 1px;
+    background-color: hsl(215, 32%, 27%);
+    margin: 20px 0;
+}
+
+.creator{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.creator img{
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    margin-right: 15px;
+}
+
+.creator p{
+    color: white;
+    font-size: 16px;
+    margin: 0;
+}
+
+.creator p span{
+    color: hsl(215, 51%, 70%);
+}

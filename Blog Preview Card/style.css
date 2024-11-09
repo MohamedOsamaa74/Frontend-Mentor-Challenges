@@ -1,0 +1,68 @@
+body{
+    background-color: #F4D04E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Figtree;
+    font-weight: 500;
+}
+
+.mainContainer{
+    background-color: white;
+    border-radius: 20px;
+    padding: 24px;
+    width: 80%;
+    max-width: 300px;
+    box-shadow: 8px 8px 0px black;
+    border: 1px solid black;
+    transition: 0.2s ease;
+}
+
+.mainContainer:hover{
+    box-shadow: 16px 16px 0px black;
+}
+
+h2{
+    font-weight: 800;
+    transition: 0.2s ease;
+}
+
+.mainContainer:hover h2{
+    color: hsl(47, 88%, 63%);
+}
+
+#image{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+#learning{
+    background-color: hsl(47, 88%, 63%);
+    font-weight: 800;
+    padding: 5px;
+    margin-right: 74.5%;
+    border-radius: 4px;
+}
+
+
+#description{
+    font-size: 0.8em;
+    opacity: 0.6;
+}
+
+.author{
+    display: flex;
+    align-items: center;
+}
+.author img{
+    width: 30px;
+    height: 30px;
+    margin-right: 12px;
+}
+
+.author p{
+    font-weight: 800;
+}

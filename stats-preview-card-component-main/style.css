@@ -1,0 +1,162 @@
+body{
+    background-color: hsl(233, 47%, 7%);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 15px;
+    padding: 0 5rem;
+    margin: 0;
+}
+
+.mainContainer{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 10px;
+    width: 100%;
+    height: 500px;
+}
+
+.info{
+    padding: 0 5rem 0 4rem;
+    width: 40%;
+    height: 52vh;
+}
+
+.info h1{
+    font-size: 2.5rem;
+}
+.info h1 span{
+    color: hsl(277, 64%, 61%);
+}
+
+.mainParagraph{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca';
+    font-weight: 400;
+    padding-right: 2rem;
+    margin-bottom: 4rem;
+    opacity: 0.7;
+}
+
+.details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding-right: 2rem;
+}
+
+.statsNumber{
+    font-size: 1.8rem;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+    color: (0, 0%, 100%, 0.6);
+}
+
+.statsDetails{
+    font-size: 1.5;
+    padding-top: 2px;
+    margin: 0;
+    font-family: 'Lexend Deca';
+    font-weight: 400;
+    opacity: 0.5;
+}
+
+.imageContainer{
+    position: relative;
+    display: inline-block;
+    width: 60%;
+    height: 100%;
+}
+
+.imageContainer img{
+    border-radius: 0 10px 10px 0;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.imageContainer::before {
+    content: "";
+    border-radius: 0 10px 10px 0;;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 255, 0.4);
+    pointer-events: none;
+}
+
+
+@media (max-width: 920px){
+    body{
+        height: 200%;
+        padding-top: 3rem;
+    }
+    
+    .mainContainer{
+        flex-direction:column-reverse;
+        height: auto;
+    }
+
+    .imageContainer{
+        width: 100%;
+        height: 100%;
+    }
+
+    .imageContainer img{
+        border-radius: 10px 10px 0 0;
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .imageContainer::before{
+        border-radius: 10px 10px 0 0;
+    }
+    
+    .info{
+        padding: 1rem;
+        width: 80%;
+    }
+    
+    .info h1{
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+    .mainParagraph{
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        font-size: 0.6rem;
+        margin-bottom: 2rem;
+    }
+
+    .details{
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+    
+    .stats{
+        margin-bottom: 2rem;
+    }
+
+    .statsNumber{
+        font-size: 1.1rem;
+    }
+    
+    .statsDetails{
+        font-size: 0.7rem;
+    }
+}

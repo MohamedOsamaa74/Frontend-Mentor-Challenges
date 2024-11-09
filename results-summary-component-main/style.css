@@ -1,0 +1,151 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Hanken Grotesk";
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.mainContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 20px;
+    box-shadow: 1px 0px 20px 2px rgb(0, 0, 0, 0.4);
+}
+
+.result{
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    padding: 25px;
+    border-radius: 10px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.result h3{
+    color: hsla(241, 100%, 89%, 0.902);
+}
+.score{
+    padding: 50px;
+    border-radius: 50%;
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0)  );
+    box-shadow: inset 1px 1px 1px 0px hsla(256, 72%, 46%, 1);
+    height: 75px;
+    width: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bigscore{
+    font-size: 60px;
+    font-weight: 700;
+    color: white;
+}
+
+.smallscore{
+    font-size: 16px;
+    font-weight: 700;
+    color: hsla(241, 100%, 89%, 0.417);
+}
+
+.analyzescore{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.analyzescore h2{
+    color: white;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.analyzescore p{
+    text-align: center;
+    color: hsla(241, 100%, 89%, 0.79);
+    padding: 5px;
+}
+
+.summary{
+    padding: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+.summary h3{
+    align-self: flex-start;
+}
+
+.details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+
+.score-details{
+    width: 100%;
+    height: 40px;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: hsl(221, 100%, 96%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    transition:  0.3s ease; /* Add transition effect to the score details */
+}
+
+.score-details:hover {
+    transform: scale(1.05); /* Add scale transformation on hover */
+}
+.score-details :last-child{
+    margin-bottom: 0;
+}
+
+.reaction, .memory, .verbal, .visual{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.reaction img, .memory img, .verbal img, .visual img {
+    margin-right: 10px;
+}
+
+.reaction p, .memory p, .verbal p, .visual p {
+    margin: 0;
+}
+
+button{
+    width: 100%;
+    padding: 12px;
+    margin-top: 40px;
+    background-color: hsl(224, 30%, 27%);
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+}

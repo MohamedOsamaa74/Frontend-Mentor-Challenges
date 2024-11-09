@@ -1,0 +1,57 @@
+body{
+    background-color: hsl(30, 54%, 90%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 220vh;
+    font-size: 16px;
+    font-weight: 400;
+}
+.mainContainer{
+    background-color: white;
+    width: 90%; 
+    max-width: 500px;
+    padding: 20px;
+    border-radius:15px;
+    box-sizing: border-box;
+}
+#image{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+h1{
+    text-align: center;
+}
+
+h2{
+    color: hsl(14, 45%, 36%);
+}
+
+ul::marker{
+    font-size: 0.3em;
+    color: hsl(14, 45%, 36%);
+}
+
+.table-style{
+    width: 100%;
+    border-collapse: collapse;
+    padding-left: 10px;
+}
+
+tr:not(:last-child){
+    border-bottom: 3px solid hsl(330, 100%, 98%);
+}
+
+span{
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.preparation{
+    background-color: hsl(330, 100%, 98%);
+    padding: 10px;
+    padding-left: 15px;
+    border-radius: 15px;
+}

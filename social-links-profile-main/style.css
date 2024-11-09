@@ -1,0 +1,85 @@
+body{
+    background-color: hsl(0, 0%, 8%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.mainContainer{
+    width: 100%;
+    max-width: 350px;
+    background-color: hsl(0, 0%, 12%);
+    padding: 24px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.mainContainer img{
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 16px;
+}
+
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.info h1{
+    color: white;
+    font-weight: 400;
+    margin-bottom: 3px;
+}
+.info p{
+    margin-top: 0;
+    color: hsl(75, 94%, 57%);
+    font-weight: 600;
+}
+
+#work{
+    color: white;
+    font-weight: 200;
+    margin-bottom: 20px;
+}
+
+.mainContainer a{
+    text-decoration: none;
+    font-weight: 600;
+    background-color: hsl(0, 0%, 20%);
+    color: white;
+    padding: 8px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    width: 300px;
+    height: 30px;
+    transition: transform 0.5s;
+}
+
+.mainContainer a i{
+    margin-right: 12px;
+}
+.mainContainer a:hover{
+    transform: scale(1.05);
+    background-color: hsl(75, 94%, 57%);
+    color: black;
+}
+
+.mainContainer a:last-child{
+    margin-bottom: 0;
+}
