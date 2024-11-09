@@ -76,6 +76,27 @@ button:hover{
 
 footer{
     display: flex;
-    justify-content: center;
+    justify-content:flex-end;
     align-items: center;
+    margin-right: 1.5rem;
+}
+
+footer i{
+    margin-right: 1.5rem;
+    padding: 0.7rem;
+    color: white;
+    font-size: 1rem;
+    border: 1px solid white;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: opacity 0.3s;
+    width: 0.9rem;
+}
+
+footer i:hover{
+    opacity: 0.3;
+}
+
+footer i.facebook-icon {
+    padding-left: 0.9rem;
 }
