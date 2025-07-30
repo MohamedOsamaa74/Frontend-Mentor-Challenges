@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  
+  <!-- Font Awesome for social media icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <title>Frontend Mentor | Ping coming soon page</title>
+
+
+</head>
+
+<body>
+  <div class="intro">
+    <img src="images/logo.svg" alt="PING logo">
+    <p>We are launching <span>soon!</span></p>
+    <p class="subscribe">Subscribe and get notified</p>
+  </div>
+
+  <div class="email">
+    <form action="" method="post" novalidate>
+      <input type="email" name="email" placeholder="Your Email Address">
+      <button type="submit" onclick="errorMessage(event)">Notify Me</button>
+    </form>
+    <p id="error">please provide a valid email address</p>
+  </div>
+  <div class="imgContainer">
+    <img src="images/illustration-dashboard.png" alt="">
+  </div>
+  <div class="social">
+    <i class="fa-brands fa-facebook-f"></i>
+    <i class="fa-brands fa-twitter"></i>
+    <i class="fa-brands fa-instagram"></i>
+  </div>
+  <footer>
+    <p>©Copyright Ping. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>

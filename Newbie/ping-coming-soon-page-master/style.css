@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 20px;
+    font-family: 'Libre Franklin';
+}
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2em;
+} 
+
+.intro img{
+    margin-bottom: 1.3em;
+    max-height: 5em;
+    max-width: 5em;
+}
+
+.intro p{
+    font-size: 1.7em;
+    font-weight: 100;
+    color: hsl(0, 0%, 59%);
+}
+
+.intro span{
+    font-weight: 700;
+    color: black;
+}
+
+.intro .subscribe{
+    padding-top: 0.7em;
+    font-size: 0.7em;
+    font-weight: 300;
+    color: hsl(209, 33%, 12%);
+}
+
+.email{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.email input{
+    width: 25em;
+    height: 4em;
+    border-radius: 2em;
+    border-width: 0.5px 0.5px;
+    padding-left: 1em;
+}
+
+.email button{
+    color: white;
+    background-color: hsl(223, 87%, 63%);
+    border: none;
+    border-radius: 2em;
+    width: 10em;
+    height: 4em;
+    cursor: pointer;
+}
+
+#error{
+    display: none;
+    padding-top: 0.5em;
+    font-size: 0.8em;
+    font-weight: 100;
+}
+
+.imgContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 4em;
+}
+
+.imgContainer img{
+    width: 35em;
+    max-width: 35em;
+    height: 20em;
+    max-height: 20em;
+}
+
+.social{
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 3em;
+}
+
+.social i {
+    color: hsl(223, 87%, 63%);
+    border: 1px solid hsl(0, 0%, 85%);
+    border-radius: 50%;
+    padding: 0.7em;
+    width: 2em;
+    height: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.social i:hover {
+    background-color: hsl(223, 87%, 63%);
+    color: white;
+    border-color: hsl(223, 87%, 63%);
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 3em;
+    margin-bottom: 4em;
+    font-size: 0.7em;
+    color: hsl(354, 100%, 66%);
+}
