@@ -7,9 +7,9 @@ function errorMessage(event) {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     
     if (emailValue === '' || !emailRegex.test(emailValue)) {
-        errorElement.style.display = "flex";
+        errorElement.classList.add('show');
     } else {
-        errorElement.style.display = "none";
+        errorElement.classList.remove('show');
         emailInput.style.borderColor = "";
     }
 }

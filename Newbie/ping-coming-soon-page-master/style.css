@@ -1,53 +1,67 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-size: 20px;
     font-family: 'Libre Franklin';
 }
 
-.intro{
+.intro {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 2em;
-} 
+}
 
-.intro img{
+.intro img {
     margin-bottom: 1.3em;
     max-height: 5em;
     max-width: 5em;
 }
 
-.intro p{
+.intro p {
     font-size: 1.7em;
     font-weight: 100;
     color: hsl(0, 0%, 59%);
 }
 
-.intro span{
+.intro span {
     font-weight: 700;
     color: black;
 }
 
-.intro .subscribe{
+.intro .subscribe {
     padding-top: 0.7em;
     font-size: 0.7em;
     font-weight: 300;
     color: hsl(209, 33%, 12%);
 }
 
-.email{
+.email {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    justify-content: center;
     margin-top: 1em;
 }
 
-.email input{
+.email .enter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.email form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1em;
+}
+
+.email input {
     width: 25em;
     height: 4em;
     border-radius: 2em;
@@ -55,7 +69,7 @@ body{
     padding-left: 1em;
 }
 
-.email button{
+.email button {
     color: white;
     background-color: hsl(223, 87%, 63%);
     border: none;
@@ -65,27 +79,32 @@ body{
     cursor: pointer;
 }
 
-#error{
-    display: none;
+
+#error {
+    visibility: hidden;
     padding-top: 0.5em;
     font-size: 0.8em;
     font-weight: 100;
 }
 
-.imgContainer{
+#error.show {
+    visibility: visible;
+}
+
+.imgContainer {
     display: flex;
     justify-content: center;
     margin-top: 4em;
 }
 
-.imgContainer img{
+.imgContainer img {
     width: 35em;
     max-width: 35em;
     height: 20em;
     max-height: 20em;
 }
 
-.social{
+.social {
     display: flex;
     justify-content: center;
     gap: 1em;
@@ -112,11 +131,74 @@ body{
     border-color: hsl(223, 87%, 63%);
 }
 
-footer{
+footer {
     display: flex;
     justify-content: center;
     margin-top: 3em;
     margin-bottom: 4em;
     font-size: 0.7em;
     color: hsl(354, 100%, 66%);
+}
+
+@media(max-width: 750px) {
+    body {
+        font-size: 12px;
+    }
+
+    .intro {
+        margin-top: 5em;
+    }
+
+    .intro p {
+        margin-bottom: 0.5em;
+    }
+
+    .intro .subscribe {
+        font-size: 1em;
+        margin-bottom: 0.7em;
+    }
+
+    .email {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1em;
+    }
+
+    .email form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .email input {
+        height: 3em;
+        width: 20em;
+        margin-bottom: 1em;
+        padding-left: 2em;
+    }
+
+    #error {
+        order: 0;
+    }
+
+    .email button {
+        height: 3em;
+        width: 20em;
+    }
+
+    .imgContainer img {
+        width: 25em;
+        max-width: 25em;
+        height: 20em;
+        max-height: 20em;
+    }
+
+    .social {
+        display: flex;
+        justify-content: center;
+        gap: 1em;
+        margin-top: 4em;
+    }
 }

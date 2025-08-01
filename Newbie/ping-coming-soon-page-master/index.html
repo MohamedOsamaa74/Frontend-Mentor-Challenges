@@ -32,10 +32,12 @@
 
   <div class="email">
     <form action="" method="post" novalidate>
-      <input type="email" name="email" placeholder="Your Email Address">
+      <div class="enter">
+        <input type="email" name="email" placeholder="Your Email Address">
+        <p id="error">please provide a valid email address</p>
+      </div>
       <button type="submit" onclick="errorMessage(event)">Notify Me</button>
     </form>
-    <p id="error">please provide a valid email address</p>
   </div>
   <div class="imgContainer">
     <img src="images/illustration-dashboard.png" alt="">
